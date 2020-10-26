@@ -1,0 +1,7 @@
+# 1.  Abra o cmd do windows e digite o seguinte comando:
+docker pull mcr.microsoft.com/mssql/server:vNext-CTP2.0-ubuntu
+
+# 2.Depois de ter finalizado, vamos dar um comando para fazer algumas configurações do SQL, como porta, usuário, senha:
+docker run -d -p 11433:1433 –-env ACCEPT_EULA=Y –env SA_PASSWORD=testeSql2020  --name TesteSQL -d mcr.microsoft.com/mssql/server:vNext-CTP2.0-ubuntu
+
+#Depois disso se vocês forem dar uma olhada no dashboard, conseguiram ver a sua imagem e algumas configurações!
